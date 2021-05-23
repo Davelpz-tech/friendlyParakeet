@@ -72,6 +72,26 @@ header {
   clear: both;
 }
 
+#options {
+  background-color: #F9FBFD;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+label, input {
+  display: inline-block;
+}
+
+label {
+  width: 30%;
+  text-align: right;
+}
+
+label+input{
+  width: 30%;
+  margin: 0 30% 0 4%;
+}
+
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
