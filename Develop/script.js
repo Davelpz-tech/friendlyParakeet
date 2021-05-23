@@ -1,33 +1,56 @@
 // Assignment code here
-/*var passOptions = [
-  {q: 'Does your password include Uppercase?', a: 't'},
-  {q: 'Does your password include Lowercase?', a: 't'},
-  {q: 'Does your password include Numbers?', a: 't'},
-  {q: 'Does your password include Symbols?', a: 't'},
-]
-function options(){
-  for (var i = 0; i < passOptions.length; i++) {
-    var userInput = confirm(passOptions[i].q);
-    if (
-      (userInput === true && passOptions[i].a === 't') || (userInput === false && passOptions[i].a === 'f')) {
-        document.getElementById('password').innerHTML = "hi"
-      }
+var addNumber = document.querySelector("#addNumber");
+var valOptions = document.getElementById('options');
+var validate = 0;
+
+
+valOptions.onsubmit = function(e){
+  e.preventDefault();
+  if(addNumber.checked === true){
+    validate = 1;
+  } if(addUpper.checked === true){
+    validate = 1;
+  } if(addLower.checked === true){
+    validate = 1;
+  } if(addSymbols.checked === true){
+    validate = 1;
+  } if(rangeChar.value.length == 0){
+    validate = 0;
+  } if(validate == 1) {
+    writePassword(rangeChar.value);
+  } else {
+    alert('Either one of your check boxes are not selected or your number range is blank')
   }
-}*/
+}
+
+
+//(example) var myString = "Hello "; myString += String.fromCharCode(65);
+
+
+function generatePassword() {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-function writePassword() {
+function writePassword(numChar) {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
+  console.log(numChar)
   passwordText.value = password;
-
 }
-
-// Add event listener to generate button
-//generateBtn.addEventListener("click", writePassword);
-
-//generateBtn.addEventListener("click", options);

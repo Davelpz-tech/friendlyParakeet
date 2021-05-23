@@ -21,14 +21,16 @@
             readonly
             id="password"
             placeholder="Your Secure Password"
-            aria-label="Generated Password"
+            aria-label="Generated Password2"
           ></textarea>
         </div>
         <div class="card-footer">
+         
+         
           <!--check boxes-->
           <form id="options">
             <label for="rangeChar">Number of Characters</label>
-            <input type="number" value="8" min="8" max="128" id="rangeChar">
+            <input type="number" min="8" max="128" id="rangeChar">
 
             <label for="addNumber">Would you like Numbers?</label>
             <input type="checkbox" id="addNumber">
@@ -41,10 +43,13 @@
 
             <label for="addSymbols">Would you like Symbols?</label>
             <input type="checkbox" id="addSymbols">
-            
+            <button id="generate" class="btn">Generate Password</button>
           </form>
-          <button id="generate" class="btn">Generate Password</button>
+
+          
         </div>
+        <!--check boxes end-->
+        
       </div>
     </div>
     <script src="script.js"></script>
