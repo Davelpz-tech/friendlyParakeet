@@ -45,8 +45,8 @@ function generatePassword(numChar, containsUpper, containsLower, containsSymbols
 }
 
 // array for ascii codes according to parameter range
-var uppercase_codes = lowToHigh(97, 122);
-var lowercase_codes = lowToHigh(65, 90);
+var uppercase_codes = lowToHigh(65, 90);
+var lowercase_codes = lowToHigh(97, 122);
 var number_codes = lowToHigh(48, 57);
 var symbols_codes = lowToHigh(33, 47);
 
