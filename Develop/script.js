@@ -6,7 +6,7 @@ var validate = 0;
 // Make sure at least one of the check boxes is selected and making sure range of characters is set
 valOptions.onsubmit = function(e){
   e.preventDefault();
-  if(addNumber.checked === true){
+  if(addNumber.checked === true){ 
     validate = 1;
   } if(addUpper.checked === true){
     validate = 1;
