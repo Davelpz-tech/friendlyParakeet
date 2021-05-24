@@ -3,10 +3,10 @@
 In a world of an increasing need for cyber security I set out with a goal and plan to build a random Password Generator using JavaScript. 
 
 ### Password generator before
-![screenshot of the password generator before](./assets/password-gen.png)
+![Alt text](assets\password-gen.PNG)
 
 ### Password generator after
-![screenshot of the password generator after](./assets/password-gen-working.png)
+![Alt text](assets\password-gen-working.png)
 
 This program allows you to generate a random and secure password after selecting certain preferences such as, if you would like to include Uppercase, Lowercase, Numbers, or Special Symbols in your password.
 

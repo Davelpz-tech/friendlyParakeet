@@ -35,7 +35,7 @@ function generatePassword(numChar, containsUpper, containsLower, containsSymbols
   if(containsNumbers) charCodes = charCodes.concat(number_codes);
   if(containsSymbols) charCodes = charCodes.concat(symbols_codes);
 
-  // apppends characters until 
+  // apppends characters until character array is filled by input length selected by users
   var passChar = []
   for (var i = 0; i < numChar; i++) {
     var characterCode = charCodes[Math.floor(Math.random() * (charCodes.length -1))]
